@@ -1,0 +1,3 @@
+SPDX-License-Identifier:  Apache-2.0
+httpd_pod_label_selector: deployment=httpd
+httpd_pod_namespace: rfe

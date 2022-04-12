@@ -1,0 +1,3 @@
+SPDX-License-Identifier:  Apache-2.0
+content_path_output_file: /opt/content-path-output
+oci_rfe_http_service_account: oci-rfe-httpd
