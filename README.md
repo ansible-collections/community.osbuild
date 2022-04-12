@@ -1,11 +1,10 @@
-# collection_template
-You can build a new repository for an Ansible Collection using this template by following [Creating a repository from a template](https://help.github.com/en/github/creating-cloning-and-archiving-repositories/creating-a-repository-from-a-template). This README.md contains recommended headings for your collection README.md, with comments describing what each section should contain. Once you have created your collection repository, delete this paragraph and the title above it from your README.md.
-
-# Foo Collection for Ansible
+# community.osbuild Collection for Ansible
 <!-- Add CI and code coverage badges here. Samples included below. -->
 [![CI](https://github.com/ansible-collections/REPONAMEHERE/workflows/CI/badge.svg?event=push)](https://github.com/ansible-collections/REPONAMEHERE/actions) [![Codecov](https://img.shields.io/codecov/c/github/ansible-collections/REPONAMEHERE)](https://codecov.io/gh/ansible-collections/REPONAMEHERE)
 
 <!-- Describe the collection and why a user would want to use it. What does the collection do? -->
+
+Deploy the [osbuild](https://www.osbuild.org/) service and perform builds.
 
 ## Code of Conduct
 
@@ -129,6 +128,23 @@ See the [changelog](https://github.com/ansible-collections/REPONAMEHERE/tree/mai
 
 <!-- Include the appropriate license information here and a pointer to the full licensing details. If the collection contains modules migrated from the ansible/ansible repo, you must use the same license that existed in the ansible/ansible repo. See the GNU license example below. -->
 
-GNU General Public License v3.0 or later.
+All files (modules, plugins, etc) found in the `plugins/` directory are [GNU General Public License v3.0 or later](https://www.gnu.org/licenses/gpl-3.0.txt).
+All files found in the `playbooks/` and `roles/` directories are [Apache License 2.0](https://apache.org/licenses/LICENSE-2.0.txt)
 
-See [LICENSE](https://www.gnu.org/licenses/gpl-3.0.txt) to see the full text.
+To make licensing easier, license headers in the source files will be
+a single line reference to Unique License Identifiers as defined by
+the Linux Foundation's SPDX project [1].  For example,
+in a source file the full "GPL v3.0 or later" header text will be
+replaced by a single line:
+
+    SPDX-License-Identifier:  GPL-3.0+
+
+and for "Apache Software License 2.0" the header text will be:
+
+    SPDX-License-Identifier:  Apache-2.0
+
+the license terms of all files in the source tree should be defined
+by such License Identifiers; in no case a file can contain more than
+one such License Identifier list.
+
+
